@@ -1,0 +1,9 @@
+name: Build & Push Image
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    uses: ./.github/workflows/docker-build.yml
